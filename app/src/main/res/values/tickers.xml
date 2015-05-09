@@ -4,7 +4,9 @@
     <string-array name="tickers_short">
         <item>AAPL</item>
         <item>AMZN</item>
+        <item>EA</item>
         <item>GOOG</item>
+        <item>GPRO</item>
         <item>FB</item>
         <item>MSFT</item>
         <item>NFLX</item>
@@ -15,7 +17,9 @@
     <string-array name="tickers_full">
         <item>Apple Inc.</item>
         <item>Amazon.com Inc.</item>
+        <item>Electronic Arts Inc.</item>
         <item>Google Inc.</item>
+        <item>GoPro Inc.</item>
         <item>Facebook Inc.</item>
         <item>Microsoft Corporation</item>
         <item>Netflix Inc.</item>
