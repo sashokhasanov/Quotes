@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Nasdaq Quotes</string>
+
+    <string name="notification_message">Quotes data is refreshed</string>
+
+    <string name="greeting">Please wait while we download the Tweets!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_friends_fragment">FriendsFragment</string>
+    <string name="title_activity_feed_fragment">FeedFragment</string>
+    <string name="title_activity_test_front_end">TestFrontEndActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="download_fail_msg">Download failed. Try again later.</string>
+    <string name="download_success_msg">Download completed successfully.</string>
+
+    <string name="equity_str">Equity NASDAQ. Currency in USD.</string>
+    <string name="warning_str">Data is currently unavailable</string>
+    <string name="open_str">Open:</string>
+    <string name="prev_close_str">Prev. close:</string>
+    <string name="ask_str">Ask:</string>
+    <string name="bid_str">Bid:</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

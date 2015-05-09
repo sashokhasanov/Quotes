@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tickers_short">
+        <item>AAPL</item>
+        <item>AMZN</item>
+        <item>GOOG</item>
+        <item>FB</item>
+        <item>MSFT</item>
+        <item>NFLX</item>
+        <item>TSLA</item>
+        <item>YNDX</item>
+    </string-array>
+
+    <string-array name="tickers_full">
+        <item>Apple Inc.</item>
+        <item>Amazon.com Inc.</item>
+        <item>Google Inc.</item>
+        <item>Facebook Inc.</item>
+        <item>Microsoft Corporation</item>
+        <item>Netflix Inc.</item>
+        <item>Tesla Motors Inc.</item>
+        <item>Yandex N.V.</item>
+    </string-array>
+
+</resources>

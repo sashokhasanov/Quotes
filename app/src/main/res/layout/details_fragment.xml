@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_material_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Apple Inc."
+            android:id="@+id/companyNameFull"
+            android:layout_marginTop="82dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/material_deep_teal_500"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="(AAPL)"
+            android:id="@+id/companyNameShort"
+            android:layout_below="@+id/companyNameFull"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/material_deep_teal_500"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/equity_str"
+            android:id="@+id/equity"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/companyNameShort"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textColor="@color/accent_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="537,90"
+            android:id="@+id/prevTradePrice"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/equity"
+            android:layout_alignLeft="@+id/equity"
+            android:layout_alignStart="@+id/equity"
+            android:textColor="@color/accent_material_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="+0,56 (0,10%)"
+            android:id="@+id/changein"
+            android:layout_alignBottom="@+id/prevTradePrice"
+            android:layout_alignRight="@+id/equity"
+            android:layout_alignEnd="@+id/equity"
+            android:textColor="@color/accent_material_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/warning_str"
+            android:id="@+id/warning"
+            android:layout_below="@+id/equity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:visibility="invisible"/>
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:stretchColumns="1"
+            android:showDividers="beginning|middle|end"
+            android:layout_alignLeft="@+id/prevTradePrice"
+            android:layout_alignStart="@+id/prevTradePrice"
+            android:layout_below="@+id/prevTradePrice"
+            android:layout_alignRight="@+id/changein"
+            android:layout_alignEnd="@+id/changein">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:showDividers="beginning">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/open_str"
+                    android:id="@+id/textView"
+                    android:layout_column="0"
+                    android:textColor="@color/accent_material_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="555,55"
+                    android:id="@+id/open"
+                    android:layout_column="1"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/accent_material_light" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/prev_close_str"
+                    android:id="@+id/textView3"
+                    android:layout_column="0"
+                    android:textColor="@color/accent_material_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="555,55"
+                    android:id="@+id/prevClose"
+                    android:layout_column="1"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/accent_material_light" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ask_str"
+                    android:id="@+id/textView5"
+                    android:layout_column="0"
+                    android:textColor="@color/accent_material_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="555,55"
+                    android:id="@+id/ask"
+                    android:layout_column="1"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/accent_material_light" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:showDividers="none|middle|end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/bid_str"
+                    android:id="@+id/textView7"
+                    android:layout_column="0"
+                    android:textColor="@color/accent_material_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="555,55"
+                    android:id="@+id/bid"
+                    android:layout_column="1"
+                    android:layout_gravity="center|right"
+                    android:textColor="@color/accent_material_light" />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
